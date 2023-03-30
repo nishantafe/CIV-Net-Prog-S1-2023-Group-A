@@ -8,7 +8,7 @@ valid_password = "password"
 
 user_choice = input("Choose [l/q]: ")
 
-if user_choice == "l ":
+if user_choice == "l":
     print("Logging you in...")
     entered_username = input("Enter your username: ")
     entered_password = input("Enter your password: ")
