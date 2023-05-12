@@ -6,8 +6,8 @@ timestamp = datetime.datetime.now().strftime(f"%d-%b-%Y (%H:%M:%S.%f)")
 ip = "10.56.17.7"
 port = 8080
 
-socket.setdefaulttimeout(0.1)
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.settimeout(0.1)
 result = sock.connect_ex((ip, port))  # If result is 0 then port is open
 
 if result == 0:
